@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="72x48" href="./icon-pioneercode-72.png">
+
+    <meta property="og:title" content="#">
+    <meta property="og:type" content="Dr Ahmed Hosny's portfolio website">
+    <meta property="og:image" content="./icon-pioneercode-72.png">
+    <meta property="og:description" content="A pharmacist and expert researcher with extensive experience in
+                        drug development and various pharmaceutical fields. He holds advanced academic qualifications,
+                        including a Bachelor of Pharmacy degree from Sinai University, and is dedicated to advancing
+                        pharmaceutical research">
+    <meta property="og:site_name" content="Dr. Ahmed Hosny - Pharmacist & Researcher">
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Dr. Ahmed Hosny - Pharmacist & Researcher</title>
+
+</head>
+
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="shadow-lg bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">Dr. Ahmed Hosny</div>
+            <nav id="desktop-nav" class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-cyan-600 transition duration-300">About</a>
+                <a href="#expertise" class="hover:text-cyan-600 transition duration-300">Expertise</a>
+                <a href="#research" class="hover:text-cyan-600 transition duration-300">Research</a>
+                <a href="#contact"
+                    class="px-4 py-2 rounded-full text-white font-semibold gradient-bg hover:shadow-lg transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button aria-label="Mobile menu button" title="Mobile menu button" id="menu-button" class="md:hidden text-2xl hover:text-cyan-600 transition duration-300"
+                onclick="toggleMobileMenu()">
+                <!-- Hamburger Icon SVG -->
+                <svg id="menu-icon-open" class="block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <!-- Close Icon SVG (Initially hidden) -->
+                <svg id="menu-icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <!-- Note: hidden class is toggled by the JavaScript function below -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
+            <a href="#about" onclick="toggleMobileMenu()"
+                class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition duration-150 border-t border-gray-100">About</a>
+            <a href="#expertise" onclick="toggleMobileMenu()"
+                class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition duration-150 border-t border-gray-100">Expertise</a>
+            <a href="#research" onclick="toggleMobileMenu()"
+                class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition duration-150 border-t border-gray-100">Research</a>
+            <a href="#contact" onclick="toggleMobileMenu()"
+                class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition duration-150 border-t border-gray-100">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="py-20 sm:py-28 gradient-bg text-white shadow-xl">
+            <div
+                class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+
+                <!-- Text Content -->
+                <div class="md:w-1/2 fade-in-up">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">
+                        Dr. Ahmed Hosny
+                    </h1>
+                    <h2 class="text-2xl sm:text-3xl font-light text-cyan-200 mb-6">
+                        Pharmacist & Pharmaceutical Sciences Researcher
+                    </h2>
+                    <p class="text-lg mb-8 opacity-90">A pharmacist and expert researcher with extensive experience in
+                        drug development and various pharmaceutical fields. He holds advanced academic qualifications,
+                        including a Bachelor of Pharmacy degree from Sinai University, and is dedicated to advancing
+                        pharmaceutical research</p>
+                    <a href="#research"
+                        class="inline-block px-8 py-3 bg-white text-indigo-800 font-bold rounded-full shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        Explore Publications
+                    </a>
+                </div>
+
+                <!-- Professional Photo Placeholder -->
+                <div class="md:w-1/3 flex justify-center">
+                    <div
+                        class="w-64 h-64 sm:w-80 sm:h-80 bg-gray-200 rounded-full shadow-2xl overflow-hidden border-4 border-white transform rotate-3 fade-in-up transition-delay">
+                        <img src="https://placehold.co/800x800/294e77/ffffff?text=Professional+Portrait"
+                            alt="Dr. Ahmed Hosny Professional Portrait" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. About Dr. Hosny -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h3 class="text-3xl font-bold mb-4 gradient-text fade-in-up">About Dr. Hosny</h3>
+                <div class="h-1 w-20 bg-cyan-600 mb-8 rounded-full fade-in-up"></div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <p class="text-gray-600 leading-relaxed fade-in-up">
+                        Dr. Ahmed Hosny is a highly accomplished pharmacist with a strong focus on advanced
+                        pharmaceutical sciences and clinical research. His academic journey provided a rigorous
+                        foundation in drug mechanisms, pharmacokinetics, and patient-centered care.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed fade-in-up transition-delay-100">
+                        His scientific vision centers on bridging the gap between bench research and bedside
+                        application, specializing in the development of novel therapeutic strategies and contributing
+                        impactful research across leading medical journals and international conferences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Areas of Expertise & Services -->
+        <section id="expertise" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-4 gradient-text fade-in-up">Areas of Expertise</h3>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-cyan-600 mb-12 rounded-full fade-in-up"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Expertise Card 1: Clinical Pharmacy -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-700 transition duration-300 hover:shadow-xl icon-hover fade-in-up">
+                        <div class="text-4xl text-indigo-700 mb-4">
+                            <!-- Icon Placeholder: Stethoscope/Clinical (Lucide Icon) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 20a6 6 0 0 0 6-6V7a4 4 0 0 0-4-4 4 4 0 0 0-4 4v3l-4 4-2-2"></path>
+                                <path d="M12 14v6"></path>
+                                <path d="M2 14h2"></path>
+                                <path d="M16 4h2a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Clinical Pharmacy</h4>
+                        <p class="text-gray-600 text-sm">Optimizing patient medication therapy, drug safety monitoring,
+                            and individualized pharmacological consultations.</p>
+                    </div>
+
+                    <!-- Expertise Card 2: Drug Development Research -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-600 transition duration-300 hover:shadow-xl icon-hover fade-in-up transition-delay-100">
+                        <div class="text-4xl text-cyan-600 mb-4">
+                            <!-- Icon Placeholder: Flask/Research (Lucide Icon) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14.5 12.5l-3-3v8"></path>
+                                <path d="M17 14v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <path d="M10 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Drug Development & PK/PD</h4>
+                        <p class="text-gray-600 text-sm">Pre-clinical and clinical phase drug testing, pharmacokinetics,
+                            and pharmacodynamics modeling.</p>
+                    </div>
+
+                    <!-- Expertise Card 3: Scientific Innovation -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-700 transition duration-300 hover:shadow-xl icon-hover fade-in-up transition-delay-200">
+                        <div class="text-4xl text-indigo-700 mb-4">
+                            <!-- Icon Placeholder: Lightbulb/Innovation (Lucide Icon) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 14c.2-1 .5-2 2-2 1.5 0 2 1 2 2 .5 1 .3 2 1 3h-6"></path>
+                                <path d="M7 14c-.2-1-.5-2-2-2-1.5 0-2 1-2 2-.5 1-.3 2-1 3h6"></path>
+                                <path d="M12 17a2 2 0 0 0 2-2V7a2 2 0 0 0-4 0v8a2 2 0 0 0 2 2z"></path>
+                                <path d="M12 5V3"></path>
+                                <path d="M12 21v-2"></path>
+                                <path d="M18 10h2"></path>
+                                <path d="M4 10H2"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Scientific Innovation & Vision</h4>
+                        <p class="text-gray-600 text-sm">Leading research projects focused on cutting-edge therapies and
+                            public health initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Research & Publications -->
+        <section id="research" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h3 class="text-3xl font-bold mb-4 gradient-text text-center fade-in-up">Research & Publications</h3>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-cyan-600 mb-12 rounded-full fade-in-up"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Publication 1 -->
+                    <div
+                        class="bg-gray-50 p-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-l-4 border-cyan-600 fade-in-up">
+                        <p class="text-sm text-gray-500 mb-1">Journal of Clinical Pharmacology, 2024</p>
+                        <h4 class="text-lg font-semibold mb-2">Targeted Drug Delivery Systems for Nanomedicine in Cancer
+                            Therapy</h4>
+                        <a href="#"
+                            class="text-indigo-700 hover:underline text-sm font-medium transition duration-300">View
+                            Full Paper (PDF)</a>
+                    </div>
+                    <!-- Publication 2 -->
+                    <div
+                        class="bg-gray-50 p-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-l-4 border-cyan-600 fade-in-up transition-delay-100">
+                        <p class="text-sm text-gray-500 mb-1">International Conference on Drug Innovation, 2023</p>
+                        <h4 class="text-lg font-semibold mb-2">Predictive Modeling of Drug-Drug Interactions in
+                            Polypharmacy Patients</h4>
+                        <a href="#"
+                            class="text-indigo-700 hover:underline text-sm font-medium transition duration-300">Conference
+                            Abstract</a>
+                    </div>
+                    <!-- Publication 3 -->
+                    <div
+                        class="bg-gray-50 p-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-l-4 border-cyan-600 fade-in-up transition-delay-200">
+                        <p class="text-sm text-gray-500 mb-1">Pharmaceutical Research Quarterly, 2022</p>
+                        <h4 class="text-lg font-semibold mb-2">The Role of AI in Accelerating Lead Compound
+                            Identification</h4>
+                        <a href="#"
+                            class="text-indigo-700 hover:underline text-sm font-medium transition duration-300">View
+                            Full Paper (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact & Appointment -->
+        <section id="contact" class="py-16 sm:py-24 gradient-bg text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h3 class="text-3xl font-bold mb-4 text-center fade-in-up">Contact & Appointment</h3>
+                <p class="text-center text-cyan-200 mb-12 fade-in-up">Get in touch to discuss research collaboration,
+                    speaking engagements, or professional consultation.</p>
+
+                <div class="bg-white p-8 sm:p-12 rounded-xl shadow-2xl text-gray-800 fade-in-up transition-delay-100">
+                    <form
+                        onsubmit="event.preventDefault(); showMessage('Your message has been sent successfully!', 'success');"
+                        class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message /
+                                Inquiry</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-bold rounded-xl shadow-md text-white bg-gradient-to-r from-indigo-700 to-cyan-500 hover:from-indigo-800 hover:to-cyan-600 transition duration-300 transform hover:scale-[1.01]">
+                            Send Message & Request Appointment
+                        </button>
+                    </form>
+
+                    <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                        <p class="text-sm font-medium text-gray-600">Email: <a
+                                href="mailto:ahmed.hosny.research@email.com"
+                                class="text-indigo-700 hover:underline">ahmed.hosny.research@email.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Social Media -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm mb-6 text-gray-400">© 2025 Dr. Ahmed Hosny. All rights reserved. | Scientific Integrity &
+                Professional Excellence.</p>
+
+            <p class="text-sm mb-6 text-gray-400">
+                Powered By
+                <a id="powered" target="_blank" rel="noopener noreferrer"
+                    href="https://wa.me/201002646280?text=السلام%20عليكم%20أريد%20الاستفسار%20عن%20الخدمة">
+                    Pioneercode
+                </a>
+            </p>
+
+
+            <!-- 6. Social Media Connectivity -->
+            <div class="flex justify-center space-x-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com"
+                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <!-- Facebook (New) -->
+                <a href="https://www.facebook.com"
+                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com"
+                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <!-- ResearchGate (Using a custom R icon for illustration) -->
+                <a href="https://web.telegram.org"
+                    class="text-gray-300 hover:text-white transition duration-300 icon-hover"
+                    aria-label="ResearchGate"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Message Box Implementation -->
+    <div id="message-box"
+        class="fixed bottom-4 right-4 z-[9999] p-4 rounded-lg shadow-xl text-white transform transition-transform duration-500 translate-x-[150%]"
+        style="min-width: 250px;">
+        <span id="message-text" class="font-semibold"></span>
+    </div>
+
+    <!-- JavaScript for Animations and Message Box -->
+    <script>
+        // Message Box Logic (Replacing alert())
+        function showMessage(text, type = 'success') {
+            const box = document.getElementById('message-box');
+            const textElement = document.getElementById('message-text');
+            textElement.textContent = text;
+
+            box.classList.remove('bg-red-500', 'bg-green-600');
+            box.classList.add(type === 'success' ? 'bg-green-600' : 'bg-red-500');
+
+            box.classList.remove('translate-x-[150%]');
+            box.classList.add('translate-x-0');
+
+            setTimeout(() => {
+                box.classList.remove('translate-x-0');
+                box.classList.add('translate-x-[150%]');
+            }, 3000);
+        }
+
+        // Mobile Menu Toggle Function (New)
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+
+            // Toggle visibility of the menu
+            menu.classList.toggle('hidden');
+
+            // Toggle icons
+            openIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+
+        // Gentle Entrance Animation Simulation (On Load)
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach((el, index) => {
+                // Staggered delay for smoother effect
+                el.style.transitionDelay = `${index * 50}ms`;
+                // To simulate gentle entrance on page load (instead of on scroll)
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, 100);
+            });
+        });
+    </script>
+</body>
+
+</html>
