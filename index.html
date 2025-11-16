@@ -43,8 +43,8 @@
                     class="px-4 py-2 rounded-full text-white font-semibold gradient-bg hover:shadow-lg transition duration-300">Contact</a>
             </nav>
             <!-- Mobile Menu Button -->
-            <button aria-label="Mobile menu button" title="Mobile menu button" id="menu-button" class="md:hidden text-2xl hover:text-cyan-600 transition duration-300"
-                onclick="toggleMobileMenu()">
+            <button aria-label="Mobile menu button" title="Mobile menu button" id="menu-button"
+                class="md:hidden text-2xl hover:text-cyan-600 transition duration-300" onclick="toggleMobileMenu()">
                 <!-- Hamburger Icon SVG -->
                 <svg id="menu-icon-open" class="block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -293,7 +293,28 @@
 
     <!-- Footer & Social Media -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <!-- 6. Social Media Connectivity -->
+        <div class="flex justify-center space-x-6">
+            <!-- LinkedIn -->
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com"
+                class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <!-- Facebook (New) -->
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com"
+                class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Facebook"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <!-- Instagram -->
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com"
+                class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <!-- ResearchGate (Using a custom R icon for illustration) -->
+            <a target="_blank" rel="noopener noreferrer" href="https://web.telegram.org"
+                class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="ResearchGate"><i
+                    class="fa-brands fa-telegram"></i></a>
+        </div>
+
+        <div id="title-footer" class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm mb-6 text-gray-400">© 2025 Dr. Ahmed Hosny. All rights reserved. | Scientific Integrity &
                 Professional Excellence.</p>
 
@@ -305,26 +326,6 @@
                 </a>
             </p>
 
-
-            <!-- 6. Social Media Connectivity -->
-            <div class="flex justify-center space-x-6">
-                <!-- LinkedIn -->
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com"
-                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <!-- Facebook (New) -->
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com"
-                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Facebook"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <!-- Instagram -->
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com"
-                    class="text-gray-300 hover:text-white transition duration-300 icon-hover" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <!-- ResearchGate (Using a custom R icon for illustration) -->
-                <a target="_blank" rel="noopener noreferrer" href="https://web.telegram.org"
-                    class="text-gray-300 hover:text-white transition duration-300 icon-hover"
-                    aria-label="ResearchGate"><i class="fa-brands fa-telegram"></i></a>
-            </div>
         </div>
     </footer>
 

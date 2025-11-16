@@ -47,3 +47,7 @@ a i {
     font-weight: 700;
     font-size: 1rem;
 }
+
+#title-footer {
+    padding-block-start: 2rem;
+}
